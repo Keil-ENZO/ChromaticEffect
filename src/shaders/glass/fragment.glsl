@@ -16,9 +16,9 @@ void main() {
     float zoomFactor = 0.6;
 
     // Adjust refractive indices for a smaller chromatic dispersion
-    float refractiveIndexR = 1.02;
-    float refractiveIndexG = 1.015;
-    float refractiveIndexB = 1.01;
+    float refractiveIndexR = 1.03;
+    float refractiveIndexG = 1.02;
+    float refractiveIndexB = 1.01   ;
 
     vec3 refractColorR = texture2D(iChannel0, vec2(0.5) - zoomFactor * refract(I, worldNormal, 1.0 / refractiveIndexR).xy / (refract(I, worldNormal, 1.0 / refractiveIndexR).z)).rgb;
     vec3 refractColorG = texture2D(iChannel0, vec2(0.5) - zoomFactor * refract(I, worldNormal, 1.0 / refractiveIndexG).xy / (refract(I, worldNormal, 1.0 / refractiveIndexG).z)).rgb;
