@@ -13,7 +13,7 @@ void main() {
 
     vec3 reflectColor = texture2D(iChannel0, vec2(0.5) - 0.5 * R.xy / R.z).rgb;
 
-    float zoomFactor = 0.6;
+    float zoomFactor = 0.5;
 
     // Adjust refractive indices for a smaller chromatic dispersion
     float refractiveIndexR = 1.03;
