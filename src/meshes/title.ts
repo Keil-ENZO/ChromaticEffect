@@ -6,7 +6,7 @@ export function title(text: string, scene: Scene): void {
     const fontLoader = new FontLoader();
     let mesh: Mesh;
 
-    fontLoader.load("/Hanson_Bold.json", (font) => {
+    fontLoader.load("/Hanson_Bold.json", (font: any) => {
         // Create text geometry
         const textGeometry = new TextGeometry(text, {
             font: font,

@@ -15,13 +15,14 @@ const camera = new THREE.PerspectiveCamera(
   1000
 );
 
+const app = document.querySelector<HTMLDivElement>("#app")!;
+
 const renderer = new THREE.WebGLRenderer({
   alpha: true, // fond transparent
   antialias: true, // anti aliasing (bords lisses)
 });
 renderer.setSize(window.innerWidth, window.innerHeight);
-document.body.appendChild(renderer.domElement);
-
+app.appendChild(renderer.domElement);
 // const geometry = new THREE.BoxGeometry(1, 1, 1);
 // const material = new THREE.MeshBasicMaterial({ color: 0xff0000 });
 // const cube = new THREE.Mesh(geometry, material);

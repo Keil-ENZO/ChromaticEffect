@@ -1,4 +1,4 @@
-import { Mesh, Vector3 } from "three";
+import { Mesh } from "three";
 import * as THREE from "three";
 import fragment from "../shaders/glass/fragment.glsl";
 import vertex from "../shaders/glass/vertex.glsl";
@@ -9,7 +9,7 @@ export function createDiamond(): {
 } {
   // set up the sphere
   // const geometry = new THREE.OctahedronGeometry(2.5);
-const geometry = new THREE.BoxGeometry(30, 30, 1);
+const geometry = new THREE.BoxGeometry(window.innerWidth, window.innerHeight, 1);
   // const material = new THREE.MeshPhysicalMaterial({
   //   roughness: 1.3,
   //   reflectivity: 0.1,
